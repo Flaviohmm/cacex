@@ -1,0 +1,8 @@
+{% extends "app/base.html" %}
+
+{% block container %}
+  {% include "app/tabela.html" %}
+  <div class="m-4">
+    <a href="{% url "gerar_relatorio_pdf" %}" class="btn btn-primary">Gerar Relatório em PDF</a>
+  </div>
+{% endblock container %}
