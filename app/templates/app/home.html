@@ -4,5 +4,6 @@
   {% include "app/tabela.html" %}
   <div class="m-4">
     <a href="{% url "gerar_relatorio_pdf" %}" class="btn btn-primary">Gerar Relatório em PDF</a>
+    <a href="{% url 'exportar_csv' %}" class="btn btn-success">Exportar CSV</a>
   </div>
 {% endblock container %}
